@@ -10,10 +10,10 @@ import org.springframework.stereotype.Component;
 public class ExampleService implements Service {
 	
 	/**
-	 * Reads next record from input 
+	 * Reads next record from input
 	 */
 	public String getMessage() {
-		return "Hello world! 2";	
+		return "Hello world!";	
 	}
 
 }
