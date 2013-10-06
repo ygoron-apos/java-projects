@@ -1,0 +1,10 @@
+2013-10-06 08:45:24,510 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.samples.spring:spring-utility:1.0.0.CI-SNAPSHOT @ /Users/ygoron/Dropbox/Temp/git-testing/java-projects/workspace/Testing/pom.xml.
+2013-10-06 08:45:26,089 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.samples.spring:spring-utility:1.0.0.CI-SNAPSHOT @ /Users/ygoron/Dropbox/Temp/git-testing/java-projects/workspace/Testing/pom.xml.
+2013-10-06 08:45:26,110 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-06 08:45:26,118 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-06 08:45:26,134 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-06 08:45:26,140 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-10-06 08:45:28,336 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-06 08:45:28,345 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-06 08:45:28,349 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-06 08:45:28,355 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
