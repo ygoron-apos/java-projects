@@ -43,3 +43,34 @@ org.eclipse.core.runtime.CoreException: The Tomcat installation directory is not
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-06 08:45:28.350
 !MESSAGE Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.atlassian.connector.eclipse.internal.jira.core 2 0 2013-10-06 08:53:44.574
+!MESSAGE Error writing JIRA repository configuration cache
+!STACK 0
+java.io.FileNotFoundException: /Users/ygoron/Dropbox/Temp/git-testing/java-projects/workspace/.metadata/.plugins/com.atlassian.connector.eclipse.jira.core/serverCache/repositoryConfigurations (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at com.atlassian.connector.eclipse.internal.jira.core.JiraClientManager.stop(JiraClientManager.java:115)
+	at com.atlassian.connector.eclipse.internal.jira.core.JiraCorePlugin.stop(JiraCorePlugin.java:99)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:399)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
