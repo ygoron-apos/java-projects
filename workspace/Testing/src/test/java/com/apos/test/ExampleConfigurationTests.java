@@ -19,6 +19,7 @@ public class ExampleConfigurationTests {
 
 	@Test
 	public void testSimpleProperties() throws Exception {
+		// Update #1
 		assertNotNull(service);
 	}
 	
