@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project InfoObjectProperties with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31.jar">
+            <manifest>
+                <attribute name="Main-Class" value="com.apos.infoobject.properties.ExtractorMain"/>
+                <attribute name="Class-Path" value=". InfoObjectExport31_lib/biplugins.jar InfoObjectExport31_lib/cecore.jar InfoObjectExport31_lib/celib.jar InfoObjectExport31_lib/ceplugins_core.jar InfoObjectExport31_lib/cereports.jar InfoObjectExport31_lib/cesession.jar InfoObjectExport31_lib/corbaidl.jar InfoObjectExport31_lib/ebus405.jar InfoObjectExport31_lib/logging.jar InfoObjectExport31_lib/ras21core.jar InfoObjectExport31_lib/ras21proc.jar InfoObjectExport31_lib/rasapp.jar InfoObjectExport31_lib/rascore.jar InfoObjectExport31_lib/SL_plugins.jar InfoObjectExport31_lib/serialization.jar InfoObjectExport31_lib/commons-codec-1.6.jar InfoObjectExport31_lib/log4j-1.2.14.jar InfoObjectExport31_lib/spring-core-3.2.2.RELEASE.jar InfoObjectExport31_lib/commons-logging-1.1.1.jar InfoObjectExport31_lib/spring-context-3.2.2.RELEASE.jar InfoObjectExport31_lib/spring-aop-3.2.2.RELEASE.jar InfoObjectExport31_lib/aopalliance-1.0.jar InfoObjectExport31_lib/spring-beans-3.2.2.RELEASE.jar InfoObjectExport31_lib/spring-expression-3.2.2.RELEASE.jar InfoObjectExport31_lib/commons-dbcp-1.3.jar InfoObjectExport31_lib/commons-pool-1.6.jar InfoObjectExport31_lib/commons-io-2.4.jar InfoObjectExport31_lib/commons-lang3-3.1.jar InfoObjectExport31_lib/mail-1.4.5.jar InfoObjectExport31_lib/activation-1.1.jar InfoObjectExport31_lib/spring-oxm-3.2.2.RELEASE.jar InfoObjectExport31_lib/commons-lang-2.5.jar"/>
+            </manifest>
+            <fileset dir="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/InfoObjectProperties/target/classes"/>
+            <fileset dir="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/Encryption/target/classes"/>
+        </jar>
+        <delete dir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <mkdir dir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/lib/bi/biplugins.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/cecore.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/celib.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/ceplugins_core.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/cereports.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/cesession.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/corbaidl.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/ebus405.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/logging.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/ras21core.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/ras21proc.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/rasapp.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/rascore.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/SL_plugins.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/serialization.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-core/3.2.2.RELEASE/spring-core-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-context/3.2.2.RELEASE/spring-context-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-aop/3.2.2.RELEASE/spring-aop-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-beans/3.2.2.RELEASE/spring-beans-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-expression/3.2.2.RELEASE/spring-expression-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-dbcp/commons-dbcp/1.3/commons-dbcp-1.3.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-pool/commons-pool/1.6/commons-pool-1.6.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/javax/mail/mail/1.4.5/mail-1.4.5.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-oxm/3.2.2.RELEASE/spring-oxm-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar" todir="/Volumes/STORAGE1/Temp/InfoObjectExport/InfoObjectExport31_lib"/>
+    </target>
+</project>

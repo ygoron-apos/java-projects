@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project Scheduler with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/Volumes/STORAGE1/Temp/Scheduler/Scheduler.jar">
+            <manifest>
+                <attribute name="Main-Class" value="com.apos.scheduler.SchedulerMain"/>
+            	<attribute name="Class-Path" value=". Scheduler_lib/cecore.jar Scheduler_lib/celib40.jar Scheduler_lib/cereports.jar Scheduler_lib/cesession.jar Scheduler_lib/corbaidl.jar Scheduler_lib/CrystalReportsSDK.jar Scheduler_lib/ebus405.jar Scheduler_lib/logging.jar Scheduler_lib/ceaspect.jar Scheduler_lib/TraceLog.jar Scheduler_lib/bcm.jar Scheduler_lib/cryptojFIPS.jar Scheduler_lib/SL_plugins.jar Scheduler_lib/sqljdbc4.jar Scheduler_lib/ceplugins_core.jar Scheduler_lib/webreporting.jar Scheduler_lib/ras21core.jar Scheduler_lib/ras21dsl.jar Scheduler_lib/ras21proc.jar Scheduler_lib/ras21sdk.jar Scheduler_lib/aspectjrt.jar Scheduler_lib/biplugins.jar Scheduler_lib/junit-4.7.jar Scheduler_lib/spring-test-3.2.2.RELEASE.jar Scheduler_lib/spring-core-3.2.2.RELEASE.jar Scheduler_lib/commons-logging-1.1.1.jar Scheduler_lib/spring-context-3.2.2.RELEASE.jar Scheduler_lib/spring-aop-3.2.2.RELEASE.jar Scheduler_lib/aopalliance-1.0.jar Scheduler_lib/spring-beans-3.2.2.RELEASE.jar Scheduler_lib/spring-expression-3.2.2.RELEASE.jar Scheduler_lib/log4j-1.2.14.jar Scheduler_lib/commons-dbcp-1.3.jar Scheduler_lib/commons-pool-1.6.jar Scheduler_lib/commons-io-2.4.jar Scheduler_lib/commons-lang3-3.1.jar Scheduler_lib/mail-1.4.5.jar Scheduler_lib/activation-1.1.jar Scheduler_lib/cecore.jar Scheduler_lib/celib31.jar Scheduler_lib/ceplugins_core.jar Scheduler_lib/cereports.jar Scheduler_lib/cesession.jar Scheduler_lib/corbaidl.jar Scheduler_lib/ebus405.jar Scheduler_lib/logging.jar Scheduler_lib/ras21core.jar Scheduler_lib/ras21proc.jar Scheduler_lib/rasapp.jar Scheduler_lib/rascore.jar Scheduler_lib/SL_plugins.jar Scheduler_lib/serialization.jar Scheduler_lib/spring-oxm-3.2.2.RELEASE.jar Scheduler_lib/commons-lang-2.5.jar Scheduler_lib/commons-codec-1.6.jar Scheduler_lib/zip4j-1.3.1.jar"/>
+            </manifest>
+            <fileset dir="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/Scheduler/target/classes"/>
+            <fileset dir="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/InfoObjectProperties/target/classes" excludes="log4j.properties,**/app-context.xml"/>
+        	<fileset dir="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/Encryption/target/classes"/>
+        </jar>
+        <delete dir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <mkdir dir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/lib/bi/biplugins.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-core/3.2.2.RELEASE/spring-core-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-context/3.2.2.RELEASE/spring-context-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-aop/3.2.2.RELEASE/spring-aop-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-beans/3.2.2.RELEASE/spring-beans-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-expression/3.2.2.RELEASE/spring-expression-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-dbcp/commons-dbcp/1.3/commons-dbcp-1.3.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-pool/commons-pool/1.6/commons-pool-1.6.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/javax/mail/mail/1.4.5/mail-1.4.5.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/org/springframework/spring-oxm/3.2.2.RELEASE/spring-oxm-3.2.2.RELEASE.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/cecore.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/celib.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/ceplugins_core.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/cereports.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/cesession.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/corbaidl.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/ebus405.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/logging.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/ras21core.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/ras21proc.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/rasapp.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/rascore.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/SL_plugins.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/Dropbox/Apos/JavaBI4Projects/workspace_mac/ReportInfoChecker/Lib31/serialization.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+    	<copy file="/Users/ygoron/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+        <copy file="/Users/ygoron/.m2/repository/net/lingala/zip4j/zip4j/1.3.1/zip4j-1.3.1.jar" todir="/Volumes/STORAGE1/Temp/Scheduler/Scheduler_lib"/>
+
+    </target>
+</project>
